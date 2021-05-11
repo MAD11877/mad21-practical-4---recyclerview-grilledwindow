@@ -37,9 +37,17 @@ public class UserAdapter extends RecyclerView.Adapter<UserViewHolder>{
     @Override
     public void onBindViewHolder(@NonNull UserViewHolder holder, int position) {
         User user = data.get(position);
-        Log.v("User", String.format("%d, %b", user.id, user.followed));
         holder.name.setText(user.name);
         holder.description.setText(user.description);
+
+        if (user.name.endsWith("7")) {
+            Log.v("User", user.name);
+            holder.userImageBig.setImageResource(R.drawable.ic_launcher_round);
+            holder.userImageBig.setVisibility(View.VISIBLE);
+        } else {
+            Log.v("User", user.name + "NOT 7");
+            holder.userImageBig.setVisibility(View.GONE);
+        }
 
         holder.userImage.setOnClickListener(view -> {
             AlertDialog.Builder builder = new AlertDialog.Builder(mContext);
