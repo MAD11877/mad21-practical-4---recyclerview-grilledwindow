@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
 
         TextView title = findViewById(R.id.title);
         TextView lorem = findViewById(R.id.lorem);
-        Button followBtn = findViewById(R.id.follow_btn);
+        Button followBtn = findViewById(R.id.btnFollow);
 
         Bundle bundle = getIntent().getExtras();
 
