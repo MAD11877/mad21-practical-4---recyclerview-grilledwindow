@@ -41,11 +41,9 @@ public class UserAdapter extends RecyclerView.Adapter<UserViewHolder>{
         holder.description.setText(user.description);
 
         if (user.name.endsWith("7")) {
-            Log.v("User", user.name);
             holder.userImageBig.setImageResource(R.drawable.ic_launcher_round);
             holder.userImageBig.setVisibility(View.VISIBLE);
         } else {
-            Log.v("User", user.name + "NOT 7");
             holder.userImageBig.setVisibility(View.GONE);
         }
 
