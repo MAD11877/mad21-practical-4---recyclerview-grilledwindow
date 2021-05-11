@@ -7,7 +7,7 @@
     tools:context=".UserViewHolder">
 
     <ImageView
-        android:id="@+id/user_image"
+        android:id="@+id/img_profile"
         android:layout_width="96dp"
         android:layout_height="96dp"
         android:src="@drawable/ic_launcher_round"
@@ -21,14 +21,14 @@
         android:layout_marginTop="8dp"
         android:text="Hello World!"
         android:textSize="28sp"
-        app:layout_constraintStart_toEndOf="@+id/user_image"
+        app:layout_constraintStart_toEndOf="@+id/img_profile"
         app:layout_constraintTop_toTopOf="parent" />
     <TextView
         android:id="@+id/description"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Hello World!"
-        app:layout_constraintStart_toEndOf="@+id/user_image"
+        app:layout_constraintStart_toEndOf="@+id/img_profile"
         app:layout_constraintBottom_toBottomOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
