@@ -13,7 +13,7 @@ public class UserViewHolder extends RecyclerView.ViewHolder {
 
     public UserViewHolder(View itemView) {
         super(itemView);
-        this.userImage = itemView.findViewById(R.id.user_image);
+        this.userImage = itemView.findViewById(R.id.img_profile);
         this.name = itemView.findViewById(R.id.name);
         this.description = itemView.findViewById(R.id.description);
     }
