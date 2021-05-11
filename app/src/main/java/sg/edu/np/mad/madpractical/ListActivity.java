@@ -29,7 +29,7 @@ public class ListActivity extends AppCompatActivity {
 
         Log.v(TAG, "List Activity Created");
 
-        RecyclerView recyclerView = findViewById(R.id.user_recycler_view);
+        RecyclerView recyclerView = findViewById(R.id.rv);
         UserAdapter mAdapter = new UserAdapter(userList, ListActivity.this);
         LinearLayoutManager mLayoutManager = new LinearLayoutManager(this);
 
